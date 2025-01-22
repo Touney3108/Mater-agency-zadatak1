@@ -1,0 +1,98 @@
+.stories{
+    color: var(--secondaryText);
+    position: relative;
+    width: 100%;
+    height: calc(var(--screenWidth)/2.31884);
+    background-color: var(--secondaryBg);
+}
+.storiesContainer{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: calc(var(--screenWidth)/11.70731) 0;
+}
+.storiesHighlight{
+    margin:0;
+    font-weight: bold;
+    letter-spacing: 10%;
+    font-size:calc(var(--screenWidth)/120);
+    line-height: 1.25;
+    color:var(--highlightColor);
+    margin-bottom: calc(var(--screenWidth)/240);;
+}
+.storiesContainer h2{
+    margin: 0;
+    width: calc(var(--screenWidth)/2.20689);
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: calc(var(--screenWidth)/30);
+    line-height: 1.0625;
+}
+.storieTextBox{
+    margin-top: calc(var(--screenWidth)/30);
+    width: calc(var(--screenWidth)/2.59459);
+    border-radius: calc(var(--screenWidth)/160);;
+    background-color: var(--primaryBg);
+    box-shadow: 0 4px calc(var(--screenWidth)/192) 0 var(--shadowLightColor);
+
+}
+.storieTextBox p{
+    margin: 0;
+    padding: calc(var(--screenWidth)/30);
+    font-weight: 500;
+    font-size:calc(var(--screenWidth)/96);
+    line-height: 1.2;
+
+}
+.storiesImgContainer{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height: calc(var(--screenWidth)/4.8);
+}
+.storiesImgContainer img{
+    display: block;
+    height: 100%;
+}
+
+
+@media screen and (orientation: portrait) {
+    .stories{
+        height: auto;
+    }
+    .storiesContainer{
+        padding: 10vw 0;
+    }
+    .storiesHighlight{
+        font-size:calc(100vw/38.4);
+        margin-bottom: calc(100vw/64);
+    }
+    .storiesContainer h2{
+        width: 80vw;
+        font-size: calc(100vw/16.5);
+    }
+    .storieTextBox{
+        margin-top: calc(100vw/20);
+        width: 65vw;
+        border-radius: calc(100vw/48);
+    
+    }
+    .storieTextBox p{
+        padding: calc(100vw/10);
+        font-size:calc(100vw/32);
+        
+    
+    }
+    .storiesImgContainer{
+        height: 50vw;
+        z-index:5;
+    }
+}
+@media screen and (orientation: portrait) and (min-width: 503px) {
+    .storiesImgContainer{
+        height: 40vw;
+    }
+}

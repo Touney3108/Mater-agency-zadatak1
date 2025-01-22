@@ -1,0 +1,44 @@
+[
+  {
+    "image": "../assets/images/travelDestinationImages/switzerland.png",
+    "name": "Switzerland",
+    "description": "Embrace Switzerland's breathtaking alpine landscapes.",
+    "price": "1,100 $",
+    "rating": "5.0"
+  },
+  {
+    "image": "../assets/images/travelDestinationImages/paris.png",
+    "name": "Paris",
+    "description": "In Paris, immerse yourself in timeless elegance.",
+    "price": "1,100 $",
+    "rating": "5.0"
+  },
+  {
+    "image": "../assets/images/travelDestinationImages/london.png",
+    "name": "London",
+    "description": "London beckons with its rich history, a modern metropolis.",
+    "price": "1,100 $",
+    "rating": "5.0"
+  },
+  {
+    "image": "../assets/images/travelDestinationImages/zagreb.png",
+    "name": "Zagreb",
+    "description": "Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.",
+    "price": "1,100 $",
+    "rating": "5.0"
+  },
+  {
+    "image": "../assets/images/travelDestinationImages/hamburg.png",
+    "name": "Hamburg",
+    "description": "Hamburg invites you to its bustling port city with a unique maritime heritage, modern architecture, and a culinary scene that will tantalize your taste buds.",
+    "price": "1,100 $",
+    "rating": "5.0"
+  },
+  {
+    "image": "../assets/images/travelDestinationImages/rome.png",
+    "name": "Rome",
+    "description": "Rome, the eternal city, where ancient ruins stand testament to a rich history.",
+    "price": "1,100 $",
+    "rating": "5.0"
+  }
+]

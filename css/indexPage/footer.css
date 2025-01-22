@@ -1,0 +1,187 @@
+.footer{
+    color:var(--secondaryText);
+    background-color: var(--primaryBg);
+    width: 100%;
+    height: calc(var(--screenWidth)/3.2);
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerBgImg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height:calc(var(--screenWidth)/3.40425);
+    z-index: 1;
+}
+.footerBgImg img{
+    display: block;
+    height: 100%;
+}
+.footerContainer{
+    padding: calc(var(--screenWidth)/12.631) 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerLogo{
+    height: 100%;
+}
+.footerLogo p{
+    font-weight: 500;
+    font-size:calc(var(--screenWidth)/120); 
+    line-height: 1.5;
+    margin:0;
+    margin-top:calc(var(--screenWidth)/160); 
+ }
+.footerLogoContainer{
+    height: calc(var(--screenWidth)/30);    
+}
+.footerLogoContainer img{
+    display:block;
+    height: 100%;
+}
+.footerLinks{
+    display:flex;
+    flex-direction: column;
+    gap:calc(var(--screenWidth)/80);
+    z-index: 5;
+}
+.footerLinks p,
+.formLabel{
+    margin:0;
+    font-weight: bold;
+    font-size: calc(var(--screenWidth)/96);
+    line-height: 1.2;
+
+}
+.footerLinks ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap:calc(var(--screenWidth)/160);
+}
+.footerLinks ul li a{
+    color: var(--secondaryText);
+    font-size: calc(var(--screenWidth)/120);
+    line-height: 1.5;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footerLinks ul li a:visited {
+    color: var(--secondaryText);
+}
+
+.footerLinks ul li a:hover {
+    color: var(--secondaryText);
+}
+
+.footerLinks ul li a:active {
+    color: var(--secondaryText);
+}
+.footerForm{
+    z-index: 5;
+}
+.footerForm form{
+    margin-top: calc(var(--screenWidth)/96);
+    display:flex;
+    flex-direction: row;
+    gap:calc(var(--screenWidth)/192);
+}
+.footerForm form input{
+    width: calc(var(--screenWidth)/6.07594);
+    border: 1px solid var(--tertiaryColor);
+    background-color: var(--primaryBg);
+    color:var(--secondaryText);
+    border-radius: calc(var(--screenWidth)/240);
+    box-shadow: 0 4px calc(var(--screenWidth)/192) 0 var(--shadowColor);
+    font-size:calc(var(--screenWidth)/120);
+    font-weight: 500;
+    line-height: 1.5;
+    padding: calc(var(--screenWidth)/120);
+
+}
+.footerForm form input::placeholder{
+    color:var(--secondaryText);
+}
+
+
+@media screen and (orientation: portrait) {
+    .footer{
+        height: auto;
+    }
+    .footerBgImg{
+        height:100%;
+    }
+    .footerContainer{
+        
+        padding-top: 10vw;
+        padding-bottom: 5vw;
+        display:flex;
+        justify-content: start;
+        gap:5vw;
+        position:relative;
+    }
+    .footerLogo{
+        position:absolute;
+        top:10vw;
+        left:0;
+        height: auto;
+        width: 100%;
+    }
+    .footerLogo p{
+        font-size:calc(100vw/48); 
+        margin-top:calc(100vw/120); 
+     }
+    .footerLogoContainer{
+        height: auto;    
+        width: 15vw;
+    }
+    .footerLogoContainer img{
+        height: auto;
+        width: 100%;
+    }
+    .footerLinks{
+        margin-top: 20vw;
+        display:inline;
+        gap:calc(var(--screenWidth)/80);
+        z-index: 5;
+    }
+    .footerLinks p,
+    .formLabel{
+        font-size: calc(100vw/32);
+    
+    }
+    .footerLinks ul{
+        gap:calc(100vw/160);
+    }
+    .footerLinks ul li a{
+        font-size: calc(100vw/38);
+    }
+    
+    .footerForm{
+        position: absolute;
+        top:10vw;
+        right: 0;
+        z-index: 5;
+    }
+    .footerForm form{
+        margin-top: calc(100vw/96);
+        gap:calc(100vw/80);
+    }
+    .footerForm form input{
+        width: 25vw;
+        border-radius: calc(100vw/96);
+        font-size:calc(100vw/40);
+        padding: calc(100vw/40);
+    
+    }
+    .footerForm .btn{
+        font-size: calc(100vw/40);
+        padding: calc(100vw/40) calc(100vw/32);
+        line-height: 1.8;
+    }
+}

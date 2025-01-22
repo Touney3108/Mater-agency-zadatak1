@@ -1,0 +1,134 @@
+.destinations{
+    width: 100%;
+    height: auto;
+    background-color: var(--primaryBg);
+    color:var(--secondaryText);
+}
+.destinationsContainer{
+    padding: calc(var(--screenWidth)/11.70731);
+    width: 100%;
+}
+.destinationsContainer h2{
+    width: 100%;
+    text-align: center;
+    font-size:calc(var(--screenWidth)/30);
+    font-family: 'Poppins';
+    font-weight: bold;
+    line-height: 1.0625;
+}
+.destinationsGrid{
+    margin-top:calc(var(--screenWidth)/30);
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:calc(var(--screenWidth)/30);
+}
+.destinationCard{
+    padding: calc(var(--screenWidth)/60);
+    display:flex;
+    flex-direction: column;
+    gap:calc(var(--screenWidth)/80);
+    border-radius: calc(var(--screenWidth)/160);
+    box-shadow: 0 4px calc(var(--screenWidth)/192) 0 var(--shadowColor);
+}
+.destinationImg{
+    width: calc(var(--screenWidth)/4.61538);
+}
+.destinationImg img{
+    display: block;
+    width: 100%;
+}
+.destinationContent{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap:calc(var(--screenWidth)/240);
+
+}
+.destinationInfo{
+    display:flex;
+    padding-bottom: calc(var(--screenWidth)/240);;
+}
+.destinationInfo span{
+    font-size:calc(var(--screenWidth)/120);
+    line-height: 1.25;
+    font-weight: 500;
+}
+.destinationInfo img{
+    display:block;
+    height: calc(var(--screenWidth)/110.98265);
+    margin-left:calc(var(--screenWidth)/96);
+    margin-right:calc(var(--screenWidth)/480);
+}
+.destinationContent h3{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size:calc(var(--screenWidth)/53.3333);
+    line-height: 1.11111;
+    margin:0;
+}
+.destinationContent p{
+    margin:0;
+    font-size:calc(var(--screenWidth)/96);
+    line-height: 1.2;
+    padding-bottom:calc(var(--screenWidth)/160);
+}
+
+
+@media screen and (orientation: portrait) {
+    .destinations{
+        width: 100%;
+        height: auto;
+        padding:10vw 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .destinations .container{
+        width: 96vw;
+    }
+    .destinationsContainer{
+        padding: 0;
+    }
+    .destinationsContainer h2{
+        font-size:calc(100vw/14.7);
+        margin:0;
+    }
+    .destinationsGrid{
+        margin-top:5vw;
+        grid-template-columns: repeat(2,1fr);
+        gap:4vw;
+    }
+    .destinationCard{
+        padding: 2vw;
+        gap:4vw;
+        border-radius: calc(100vw/48);
+    }
+    .destinationImg{
+        width: 100%;
+    }
+    .destinationContent{
+        gap:2vw;
+
+    }
+    .destinationInfo{
+        padding-bottom: 1vw;
+    }
+    .destinationInfo span{
+        font-size:calc(100vw/38.4);
+    }
+    .destinationInfo img{
+        width: calc(100vw/38.4);
+        height: auto;
+        margin-left:calc(100vw/32);
+        margin-right:calc(100vw/153.6);
+    }
+    .destinationContent h3{
+        font-size:calc(100vw/18);
+        width: 100%;
+    }
+    .destinationContent p{
+        font-size:calc(100vw/32);
+        padding-bottom:2vw;
+    }
+}

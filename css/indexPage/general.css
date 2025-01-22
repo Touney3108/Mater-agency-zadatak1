@@ -1,0 +1,93 @@
+:root{
+    --screenWidth:calc(100vw - var(--scrollbar-compensation));/* screenWidth-scrollbarWidth */
+    --screenHeight:calc(100 * var(--vh));
+    --heroBgImgHeight:880px;
+    --primaryText:#ffffff;
+    --secondaryText:#222222;
+    --highlightColor:#DF6951;
+    --primaryBg:#ffffff;
+    --secondaryBg:#fafafa;
+    --tertiaryColor:#D9D9D9;
+    --shadowColor:#7E7E7E26;
+    --shadowLightColor:#7E7E7E13;
+    --blur-color:rgba(0, 0, 0, 0.2);
+}
+
+*{
+    font-family: 'Inter',sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:79.166%;
+    height: 100%;
+}
+
+.btn{
+    background-color: var(--highlightColor);
+    color:var(--primaryText);
+    border-radius: calc(var(--screenWidth)/240);
+    font-size:calc(var(--screenWidth)/120);
+    line-height: 1.2;
+    font-weight: bold;
+    letter-spacing: 10%;
+    border: none;
+    cursor: pointer;
+    padding:calc(var(--screenWidth)/96) calc(var(--screenWidth)/80);
+    display:inline-flex;
+    
+}
+.letter {
+    display: inline-block;
+    margin: 0 calc(var(--screenWidth)/2400);
+}
+.btn:hover .letter{
+    animation: bounce 0.3s ease-in-out forwards;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(calc(-0.6*calc(var(--screenWidth)/120)));
+    }
+}
+.linkLetter {
+    display: inline-block;
+}
+.animatedLink .linkLetter{
+    animation: scaleDown 0.3s ease-in-out backwards;
+}
+.animatedLink:hover .linkLetter{
+    animation: scaleUp 0.3s ease-in-out forwards;
+}
+@keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
+  
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media screen and (orientation: portrait) {
+    .container{
+        width: 90vw;
+    }
+    .btn{
+        font-size: calc(100vw/32);
+        padding: calc(100vw/24) calc(100vw/21.33);
+        border-radius: calc(100vw/48);
+    }
+}
